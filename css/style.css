@@ -1,12 +1,9 @@
 body {
-
     background: url('/assets/4fa0df8e-8469-438b-b7ea-3c35d0ab5084.jpg') black;
-    /* background-blend-mode: multiply; */
-
+    background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
 }
 
 .hero {
@@ -24,6 +21,7 @@ body::-webkit-scrollbar {
     overflow: hidden;
 }
 
+
 /* Header and navbar */
 
 .header-logo {
@@ -38,15 +36,11 @@ body::-webkit-scrollbar {
         justify-content: center;
         flex-grow: 1;
     }
-
     #navbar-btn {}
-
     .navbar .header-logo {
         margin-right: auto;
     }
-
     .navbar #navbar-btn {
-
         margin-left: auto;
     }
 }
@@ -68,8 +62,6 @@ body::-webkit-scrollbar {
     -webkit-backdrop-filter: blur(10px);
 }
 
-
-
 .dropdown-menu {
     background-color: rgba(255, 255, 255, 0);
     backdrop-filter: blur(10px);
@@ -87,8 +79,8 @@ body::-webkit-scrollbar {
 }
 
 
-
 /* new */
+
 .offcanvas-top {
     backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.6);
