@@ -1,6 +1,6 @@
 body {
     background: url('/assets/4fa0df8e-8469-438b-b7ea-3c35d0ab5084.jpg') black;
-    background-blend-mode: multiply;
+    /* background-blend-mode: multiply; */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
