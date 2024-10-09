@@ -162,29 +162,6 @@ body::-webkit-scrollbar {
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-
-/* Glass effect for dropdown menu */
-
-
-/* .glass-dropdown {
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    color: #fff;
-    padding: 10px;
-}
-
-.glass-dropdown .dropdown-item {
-    color: white;
-}
-
-.glass-dropdown .dropdown-item:hover {
-    background: rgba(255, 255, 255, 0.3);
-    color: black;
-} */
-
 .custom-toggler {
     background-color: transparent;
     cursor: pointer;
