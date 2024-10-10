@@ -5,6 +5,31 @@ body {
     background-size: cover;
 }
 
+
+/* For Saira */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Saira', sans-serif;
+}
+
+
+/* For Open Sans */
+
+p,
+a,
+li,
+span,
+input,
+button {
+    font-family: 'Open Sans', sans-serif;
+}
+
 .hero {
     height: 80vh;
     color: white;
@@ -88,10 +113,6 @@ body::-webkit-scrollbar {
     color: white;
 }
 
-.dropdown-menu .dropdown-item {
-    margin-bottom: 10px;
-}
-
 .nav-link {
     position: relative;
     display: inline-block;
@@ -115,6 +136,10 @@ body::-webkit-scrollbar {
 
 .nav-link:hover::after {
     width: 100%;
+}
+
+.dropdown-menu .dropdown-item {
+    margin-bottom: 10px;
 }
 
 .dropdown-item {
@@ -200,7 +225,7 @@ body::-webkit-scrollbar {
 
 .custom-btn-close {
     position: relative;
-    margin: 5% 15%;
+    margin: auto;
     background-color: transparent;
     border: none;
     color: white;
@@ -229,6 +254,27 @@ body::-webkit-scrollbar {
 .custom-btn-close:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
+}
+
+.custom-dropdown-menu:hover {
+    background-color: #ffffff;
+}
+
+.custom-dropdown-menu .dropdown-item:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.custom-dropdown-menu {
+    background-color: #0e0d0d;
+}
+
+.custom-dropdown-item {
+    background-color: #0e0d0d;
+}
+
+.dropdown-toggle {
+    background-color: aqua;
 }
 
 .about-us {
