@@ -5,9 +5,6 @@ body {
     background-size: cover;
 }
 
-
-/* For Saira */
-
 body,
 h1,
 h2,
@@ -18,9 +15,6 @@ h6 {
     font-family: 'Saira', sans-serif;
 }
 
-
-/* For Open Sans */
-
 p,
 a,
 li,
@@ -30,6 +24,9 @@ button {
     font-family: 'Open Sans', sans-serif;
 }
 
+
+/* Navbar */
+
 .hero {
     height: 80vh;
     color: white;
@@ -37,7 +34,7 @@ button {
 }
 
 header {
-    margin-bottom: 60px;
+    margin-bottom: 100%;
 }
 
 body::-webkit-scrollbar {
@@ -49,40 +46,6 @@ body::-webkit-scrollbar {
     max-width: 150px;
     max-height: 150px;
     margin: 1% 30% 0% 2%;
-}
-
-@media (min-width: 992px) {
-    .navbar .navbar-nav {
-        display: flex;
-        justify-content: center;
-        flex-grow: 1;
-    }
-    .navbar .header-logo {
-        margin-right: auto;
-    }
-    .navbar #navbar-btn {
-        margin-left: auto;
-    }
-    .custom-offcanvas-body {
-        backdrop-filter: blur(10px);
-    }
-}
-
-@media (max-width: 991px) {
-    .custom-offcanvas-body {
-        backdrop-filter: blur(10px);
-        background: linear-gradient(to bottom, #0e0d0d, #0e0d0d);
-    }
-    .offcanvas-header {
-        backdrop-filter: blur(10px);
-        background: linear-gradient(to bottom, #0e0d0d, #0e0d0d);
-    }
-}
-
-@media (max-width: 575px) {
-    .btn-success {
-        margin: 30px 50% 0px 0px;
-    }
 }
 
 .navbar-nav {
@@ -276,6 +239,43 @@ body::-webkit-scrollbar {
 .dropdown-toggle {
     background-color: aqua;
 }
+
+@media (min-width: 992px) {
+    .navbar .navbar-nav {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+    }
+    .navbar .header-logo {
+        margin-right: auto;
+    }
+    .navbar #navbar-btn {
+        margin-left: auto;
+    }
+    .custom-offcanvas-body {
+        backdrop-filter: blur(10px);
+    }
+}
+
+@media (max-width: 991px) {
+    .custom-offcanvas-body {
+        backdrop-filter: blur(10px);
+        background: linear-gradient(to bottom, #0e0d0d, #0e0d0d);
+    }
+    .offcanvas-header {
+        backdrop-filter: blur(10px);
+        background: linear-gradient(to bottom, #0e0d0d, #0e0d0d);
+    }
+}
+
+@media (max-width: 575px) {
+    .btn-success {
+        margin: 30px 50% 0px 0px;
+    }
+}
+
+
+/* Navbar */
 
 .about-us {
     background-color: aqua;
