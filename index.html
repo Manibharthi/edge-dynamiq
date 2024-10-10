@@ -18,18 +18,21 @@
 
             <div class="container-fluid">
                 <img class="header-logo" src="assets/logo.png" alt="logo" />
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-                <div class="offcanvas offcanvas-top bg-transparent" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                    <div class="offcanvas-header ">
-                        <!-- <img class="header-logo" src="assets/logo.png" alt="logo" /> -->
-                        <button type="button" class="btn-close btn-close-white ml-2" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button class="custom-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  
+              </button>
+
+                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <img class="header-logo" src="assets/logo.png" alt="logo" />
+                        <button type="button" class="custom-btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div>
-                        <div class="offcanvas-body">
+                        <div class="offcanvas-body custom-offcanvas-body">
                             <ul class="navbar-nav mx-auto flex-grow-1 pe-5 ps-4">
-                                <!-- ps-0 -->
+
                                 <ul class="navbar-nav justify-content-top flex-grow-1">
                                     <li class="nav-item">
                                         <a class="nav-link active" aria-current="page" href="#">Home</a
@@ -42,9 +45,9 @@
                     class="nav-link dropdown-toggle"
                     href="#"
                     role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
+                    
                   >
+               
                     Services
                   </a>
                                         <ul class="dropdown-menu dropdown-menu-dark" id="navbar-dropdown-item">
@@ -59,26 +62,26 @@
                                             <li>
                                                 <a class="dropdown-item mb-3" href="#">Social Media Marketing</a>
                                             </li>
-                                            <li></li>
-                                            <a class="dropdown-item mb-3" href="#">Performance Marketing</a>
-                                    </li>
-                                    <li></li>
-                                    <a class="dropdown-item mb-3" href="#">UIUX Design</a>
-                                    </li>
-                                    <li></li>
-                                    <a class="dropdown-item mb-3" href="#">Web Development</a>
-                                    </li>
-                                    </ul>
-                                    </li>
-                                    <li class="nav-item"></li>
-                                    <a class="nav-link" href="#">About</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Portfolio</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Blog</a>
-                                    </li>
+                                            <li>
+                                                <a class="dropdown-item mb-3" href="#">Performance Marketing</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item mb-3" href="#">UIUX Design</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item mb-3" href="#">Web Development</a>
+                                            </li>
+                                        </ul>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">About</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Portfolio</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Blog</a>
+                                        </li>
                                 </ul>
 
                                 <button class="btn btn-success" id="navbar-btn" type="submit">Get in Touch</button>
@@ -94,7 +97,8 @@
         <section class="hero d-flex align-items-center justify-content-center">
             <div class="container text-center">
                 <h1>Welcome to Our Website</h1>
-                <p class="lead">We provide amazing digital solutions for your business.</p>
+
+                <p class="lead">We provide amazing digital solution for your business.</p>
                 <a href="#" class="btn btn-primary btn-lg">Learn More</a>
             </div>
         </section>
