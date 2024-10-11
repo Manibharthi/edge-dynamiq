@@ -1,5 +1,6 @@
-body {
-    background: url('/assets/4fa0df8e-8469-438b-b7ea-3c35d0ab5084.jpg') black;
+#carouselExampleFade {
+    /* background: url('/assets/4fa0df8e-8469-438b-b7ea-3c35d0ab5084.jpg') black; */
+    background-color: #000000;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -27,14 +28,8 @@ button {
 
 /* Navbar */
 
-.hero {
-    height: 80vh;
-    color: white;
-    padding-top: 60px;
-}
-
 header {
-    margin-bottom: 100%;
+    margin-bottom: 80%;
 }
 
 body::-webkit-scrollbar {
@@ -220,12 +215,12 @@ body::-webkit-scrollbar {
 }
 
 .custom-dropdown-menu:hover {
-    background-color: #ffffff;
+    background-color: #353A40;
 }
 
 .custom-dropdown-menu .dropdown-item:hover {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
+    background-color: #353A40;
+    color: aqua;
 }
 
 .custom-dropdown-menu {
@@ -277,6 +272,172 @@ body::-webkit-scrollbar {
 
 /* Navbar */
 
-.about-us {
-    background-color: aqua;
+
+/* Global Body Style */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+
+/* Hero Section */
+
+
+/* Global Styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background: linear-gradient(to bottom, black, rgb(92, 64, 250), rgba(0, 0, 0, 1));
+    background-size: 100% 1000%;
+    /* Adjust this value to control the size */
+    overflow: hidden;
+}
+
+.hero-content {
+    z-index: 2;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+}
+
+h1 .highlight {
+    color: #00ffcc;
+    background: linear-gradient(90deg, #00ffcc 0%, #ff55cc 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.cta-buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+.primary-btn {
+    background-color: #00ffcc;
+}
+
+.primary-btn:hover {
+    background-color: #00d1a9;
+}
+
+.secondary-btn {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #00ffcc;
+}
+
+.secondary-btn:hover {
+    background-color: #00ffcc;
+}
+
+
+/* Carousel Fade Effect */
+
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-fade .carousel-item.active {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+/* Carousel Controls */
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+
+
+/* Carousel Indicators */
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.carousel-indicators button {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.carousel-indicators .active {
+    background-color: #00ffcc;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
 }
