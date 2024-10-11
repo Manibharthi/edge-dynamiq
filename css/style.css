@@ -305,8 +305,8 @@ body {
     align-items: center;
     color: white;
     text-align: center;
-    background: linear-gradient(to bottom, black, rgb(92, 64, 250), rgba(0, 0, 0, 1));
-    background-size: 100% 1000%;
+    background: linear-gradient(to top, black, rgb(92, 64, 250));
+    background-size: 10% 100% 500%;
     /* Adjust this value to control the size */
     overflow: hidden;
 }
