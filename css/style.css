@@ -1,9 +1,12 @@
 #carouselExampleFade {
-    /* background: url('/assets/4fa0df8e-8469-438b-b7ea-3c35d0ab5084.jpg') black; */
     background-color: #000000;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+html {
+    background-color: #000
 }
 
 body,
@@ -35,6 +38,7 @@ header {
 body::-webkit-scrollbar {
     display: none;
     overflow: hidden;
+    background-color: black;
 }
 
 .header-logo {
@@ -45,7 +49,7 @@ body::-webkit-scrollbar {
 
 .navbar-nav {
     align-self: baseline;
-    padding: 0% 4% 0% 0%;
+    padding: 0.5% 4% 0% 0%;
 }
 
 .navbar-toggler {
@@ -67,9 +71,10 @@ body::-webkit-scrollbar {
     backdrop-filter: blur(10px);
 }
 
-.offcanvas-body {
-    color: white;
-}
+
+/* .offcanvas {
+    min-width: 100%;
+} */
 
 .nav-link {
     position: relative;
@@ -196,17 +201,18 @@ body::-webkit-scrollbar {
     left: 50%;
     top: 50%;
     content: ' ';
-    height: 24px;
+    height: 35px;
     width: 2px;
     background-color: white;
+    margin-top: 12px;
 }
 
 .custom-btn-close::before {
-    transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-35%, -55%) rotate(45deg);
 }
 
 .custom-btn-close::after {
-    transform: translate(-50%, -50%) rotate(-45deg);
+    transform: translate(-10%, -80%) rotate(-45deg);
 }
 
 .custom-btn-close:hover {
@@ -273,29 +279,7 @@ body::-webkit-scrollbar {
 /* Navbar */
 
 
-/* Global Body Style */
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-    background-color: #000;
-    overflow-x: hidden;
-}
-
-
 /* Hero Section */
-
-
-/* Global Styles */
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-    background-color: #000;
-    overflow-x: hidden;
-}
 
 .hero-section {
     position: relative;
@@ -305,14 +289,21 @@ body {
     align-items: center;
     color: white;
     text-align: center;
-    background: linear-gradient(to top, black, rgb(92, 64, 250));
-    background-size: 10% 100% 500%;
-    /* Adjust this value to control the size */
+    background: url('/assets/artistic-blurry-colorful-wallpaper-background.jpg') black;
+    /* background-size: 10% 50% 500%; */
+    background-color: #000;
     overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
 }
 
 .hero-content {
+    position: relative;
     z-index: 2;
+    text-align: center;
+    color: #fff;
 }
 
 h1 {
@@ -347,24 +338,31 @@ p {
     color: #fff;
     transition: background-color 0.3s ease;
     font-size: 1rem;
+    margin: 20px;
+    border: 5px solid #00ffcc;
+}
+
+a.btn.primary-btn {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
     margin: 10px;
+    border: 1px solid #00ffcc;
 }
 
-.primary-btn {
-    background-color: #00ffcc;
-}
-
-.primary-btn:hover {
+a.btn.primary-btn:hover {
     background-color: #00d1a9;
+    color: rgb(0, 0, 0);
 }
 
-.secondary-btn {
+a.btn.secondary-btn {
+    color: white;
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid #00ffcc;
 }
 
-.secondary-btn:hover {
+a.btn.secondary-btn:hover {
     background-color: #00ffcc;
+    color: rgb(0, 0, 0);
 }
 
 
@@ -403,10 +401,12 @@ p {
 /* Carousel Indicators */
 
 .carousel-indicators {
-    position: absolute;
-    bottom: 20px;
+    position: relative;
     left: 50%;
-    transform: translateX(-50%);
+    bottom: 20px;
+    transform: translateX(-0%);
+    margin: 0%;
+    padding: 0%;
 }
 
 .carousel-indicators button {
@@ -414,7 +414,7 @@ p {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    margin: 5px;
+    margin: 5rem;
 }
 
 .carousel-indicators .active {
@@ -439,5 +439,40 @@ p {
     }
     p {
         font-size: 0.9rem;
+    }
+}
+
+
+/* _____________________________________________ */
+
+.color-animation {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, #ff55cc, #00ffcc, #052383, #000);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    animation: gradient-animation 15s infinite;
+    filter: blur(50px);
+}
+
+@keyframes gradient-animation {
+    0% {
+        background: radial-gradient(circle, #ff0077, #00ffcc, #031691, #40a3ff);
+    }
+    25% {
+        background: radial-gradient(circle, #00ffcc, #031691, #40a3ff, #ff0077);
+    }
+    50% {
+        background: radial-gradient(circle, #031691, #40a3ff, #ff0077, #00ffcc);
+    }
+    75% {
+        background: radial-gradient(circle, #00ffcc, #031691, #40a3ff, #ff0077);
+    }
+    100% {
+        background: radial-gradient(circle, #ff0077, #00ffcc, #031691, #00aaff);
     }
 }
