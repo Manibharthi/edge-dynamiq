@@ -32,7 +32,7 @@ button {
 /* Navbar */
 
 header {
-    margin-bottom: 80%;
+    margin-bottom: 0%;
 }
 
 body::-webkit-scrollbar {
@@ -44,12 +44,12 @@ body::-webkit-scrollbar {
 .header-logo {
     max-width: 150px;
     max-height: 150px;
-    margin: 1% 30% 0% 2%;
+    margin: 1% 35% 0% 2%;
 }
 
 .navbar-nav {
-    align-self: baseline;
     padding: 0.5% 4% 0% 0%;
+    align-items: center;
 }
 
 .navbar-toggler {
@@ -57,9 +57,14 @@ body::-webkit-scrollbar {
     border-color: rgba(255, 255, 255, 0.5);
 }
 
-.container-fluid {
-    width: 100%;
-}
+
+/* @media (min-width: 576px) {
+    .navbar {
+        justify-content: space-between;
+        display: flex;
+        width: 100%;
+    }
+} */
 
 .navbar,
 .offcanvas-top,
@@ -203,11 +208,11 @@ body::-webkit-scrollbar {
 }
 
 .custom-btn-close::before {
-    transform: translate(-35%, -55%) rotate(45deg);
+    transform: translate(-0%, -0%) rotate(45deg);
 }
 
 .custom-btn-close::after {
-    transform: translate(-10%, -80%) rotate(-45deg);
+    transform: translate(-0%, -0%) rotate(-45deg);
 }
 
 .custom-btn-close:hover {
@@ -234,6 +239,30 @@ body::-webkit-scrollbar {
 
 .dropdown-toggle {
     background-color: aqua;
+}
+
+.custom-btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    margin: 20px;
+    border: 5px solid #00ffcc;
+}
+
+.custom-btn {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    margin: 10px;
+    border: 1px solid #00ffcc;
+}
+
+.custom-btn:hover {
+    background-color: #00d1a9;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
 }
 
 @media (min-width: 992px) {
@@ -391,10 +420,36 @@ p {
 }
 
 .cta-buttons {
-    margin-top: 20px;
+    position: absolute;
+    bottom: 320px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
 }
 
-.btn {
+.cta-buttons .btn {
+    margin: 0 10px;
+}
+
+@media (max-width: 576px) {
+    .cta-buttons {
+        flex-direction: column;
+        bottom: 190px;
+        left: 55%;
+        transform: translateX(-50%);
+        gap: 10px;
+        align-items: center;
+    }
+    .cta-buttons .btn {
+        width: 70%;
+        font-size: 14px;
+        margin: 50px 10;
+        text-align: center;
+    }
+}
+
+
+/* .btn {
     text-decoration: none;
     padding: 12px 30px;
     border-radius: 30px;
@@ -403,7 +458,7 @@ p {
     font-size: 1rem;
     margin: 20px;
     border: 5px solid #00ffcc;
-}
+} */
 
 a.btn.primary-btn {
     background-color: rgba(255, 255, 255, 0.1);
@@ -428,13 +483,16 @@ a.btn.secondary-btn:hover {
     color: rgb(0, 0, 0);
 }
 
+
+/* carousel  */
+
 .carousel-fade .carousel-item {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
 
 .carousel-fade .carousel-item.active {
-    opacity: 1;
+    opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
 
@@ -457,7 +515,8 @@ a.btn.secondary-btn:hover {
 .carousel-indicators {
     position: relative;
     left: 50%;
-    bottom: 20px;
+    /* bottom: 0px; */
+    top: 70%;
     transform: translateX(-0%);
     margin: 0%;
     padding: 0%;
@@ -493,9 +552,15 @@ a.btn.secondary-btn:hover {
     }
 }
 
+
+/* carousel  */
+
+
+/* color circle */
+
 .color-circle {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     width: 350px;
     height: 350px;
@@ -504,7 +569,7 @@ a.btn.secondary-btn:hover {
     transform: translate(-50%, -50%);
     z-index: 1;
     animation: rotateCircle 10s linear infinite;
-    filter: blur(50px);
+    filter: blur(30px);
     opacity: 0.8;
 }
 
@@ -516,6 +581,43 @@ a.btn.secondary-btn:hover {
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
+
+
+/* color circle responsiveness */
+
+
+/* For screens less than 768px wide (tablets) */
+
+@media (max-width: 768px) {
+    .color-circle {
+        width: 40vw;
+        /* Slightly larger relative size */
+        height: 40vw;
+        filter: blur(25px);
+        /* Adjust blur for smaller screens */
+    }
+}
+
+
+/* For screens less than 480px wide (mobile) */
+
+@media (max-width: 480px) {
+    .color-circle {
+        width: 50vw;
+        /* Even larger relative size */
+        height: 50vw;
+        filter: blur(20px);
+        /* Adjust blur */
+        top: 45%;
+        /* Slight adjustment to vertical positioning */
+    }
+}
+
+
+/* color circle responsiveness */
+
+
+/* color circle */
 
 
 /* hero section */
