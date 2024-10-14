@@ -58,10 +58,13 @@ body::-webkit-scrollbar {
 }
 
 .navbar,
-.offcanvas-top,
 .offcanvas-body,
-.navbar-nav,
-.nav-item,
+
+/* .navbar-nav, */
+
+
+/* .nav-item, */
+
 .navbar-toggler,
 .offcanvas {
     backdrop-filter: blur(10px);
@@ -269,17 +272,17 @@ body::-webkit-scrollbar {
         margin-left: auto;
     }
     .custom-offcanvas-body {
-        backdrop-filter: blur(10px);
+        /* backdrop-filter: blur(10px); */
     }
 }
 
 @media (max-width: 991px) {
     .custom-offcanvas-body {
-        backdrop-filter: blur(10px);
+        /* backdrop-filter: blur(10px); */
         background: linear-gradient(to bottom, #0e0d0d, #0e0d0d);
     }
     .offcanvas-header {
-        backdrop-filter: blur(10px);
+        /* backdrop-filter: blur(10px); */
         background: linear-gradient(to bottom, #0e0d0d, #0e0d0d);
     }
 }
