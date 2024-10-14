@@ -57,15 +57,6 @@ body::-webkit-scrollbar {
     border-color: rgba(255, 255, 255, 0.5);
 }
 
-
-/* @media (min-width: 576px) {
-    .navbar {
-        justify-content: space-between;
-        display: flex;
-        width: 100%;
-    }
-} */
-
 .navbar,
 .offcanvas-top,
 .offcanvas-body,
@@ -396,6 +387,7 @@ body::-webkit-scrollbar {
     z-index: 2;
     text-align: center;
     color: #fff;
+    margin-top: -80px;
 }
 
 h1 {
@@ -421,7 +413,7 @@ p {
 
 .cta-buttons {
     position: absolute;
-    bottom: 320px;
+    bottom: 350px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
@@ -447,18 +439,6 @@ p {
         text-align: center;
     }
 }
-
-
-/* .btn {
-    text-decoration: none;
-    padding: 12px 30px;
-    border-radius: 30px;
-    color: #fff;
-    transition: background-color 0.3s ease;
-    font-size: 1rem;
-    margin: 20px;
-    border: 5px solid #00ffcc;
-} */
 
 a.btn.primary-btn {
     background-color: rgba(255, 255, 255, 0.1);
@@ -515,7 +495,6 @@ a.btn.secondary-btn:hover {
 .carousel-indicators {
     position: relative;
     left: 50%;
-    /* bottom: 0px; */
     top: 70%;
     transform: translateX(-0%);
     margin: 0%;
@@ -585,31 +564,20 @@ a.btn.secondary-btn:hover {
 
 /* color circle responsiveness */
 
-
-/* For screens less than 768px wide (tablets) */
-
 @media (max-width: 768px) {
     .color-circle {
         width: 40vw;
-        /* Slightly larger relative size */
         height: 40vw;
         filter: blur(25px);
-        /* Adjust blur for smaller screens */
     }
 }
-
-
-/* For screens less than 480px wide (mobile) */
 
 @media (max-width: 480px) {
     .color-circle {
         width: 50vw;
-        /* Even larger relative size */
         height: 50vw;
         filter: blur(20px);
-        /* Adjust blur */
         top: 45%;
-        /* Slight adjustment to vertical positioning */
     }
 }
 
