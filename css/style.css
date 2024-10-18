@@ -569,131 +569,16 @@ a.btn.secondary-btn:hover {
 /* hero section */
 
 
-/* who we are */
-
-.bubble {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    box-shadow: inset 0 0 25px rgba (255, 255, 255, 0.25);
-    animation: animate_4010 8s ease-in-out infinite;
-  }
-  
-  .bubble:nth-child(2) {
-    position: relative;
-    zoom: 0.45;
-    left: -10px;
-    top: -100px;
-    animation-delay: -4s;
-  }
-  
-  .bubble:nth-child(3) {
-    position: relative;
-    zoom: 0.45;
-    right: -80px;
-    top: -300px;
-    animation-delay: -6s;
-  }
-  
-  .bubble:nth-child(4) {
-    position: relative;
-    zoom: 0.35;
-    left: -120px;
-    bottom: -200px;
-    animation-delay: -3s;
-  }
-  
-  .bubble:nth-child(5) {
-    position: relative;
-    zoom: 0.5;
-    left: 0px;
-    top: 200px;
-    animation-delay: -5s;
-  }
-  
-  @keyframes animate_4010 {
-    0%,100% {
-      transform: translateY(-20px);
-    }
-  
-    50% {
-      transform: translateY(20px);
-    }
-  }
-  
-  .bubble::before {
-    content: '';
-    position: absolute;
-    top: 50px;
-    left: 45px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: #fff;
-    z-index: 10;
-    filter: blur(2px);
-  }
-  
-  .bubble::after {
-    content: '';
-    position: absolute;
-    top: 80px;
-    left: 80px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #fff;
-    z-index: 10;
-    filter: blur(2px);
-  }
-  
-  .bubble span {
-    position: absolute;
-    border-radius: 50%;
-  }
-  
-  .bubble span:nth-child(1) {
-    inset: 10px;
-    border-left: 15px solid #0fb4ff;
-    filter: blur(8px);
-  }
-  
-  .bubble span:nth-child(2) {
-    inset: 10px;
-    border-right: 15px solid #ff4484;
-    filter: blur(8px);
-  }
-  
-  .bubble span:nth-child(3) {
-    inset: 10px;
-    border-top: 15px solid #ffeb3b;
-    filter: blur(8px);
-  }
-  
-  .bubble span:nth-child(4) {
-    inset: 30px;
-    border-left: 15px solid #ff4484;
-    filter: blur(12px);
-  }
-  
-  .bubble span:nth-child(5) {
-    inset: 10px;
-    border-bottom: 10px solid #fff;
-    filter: blur(8px);
-    transform: rotate(330deg);
-  }
-
+/* section2 */
   .who-we-are-section {
     position: relative;
-    background-color: #000;
-    padding: 50px 0;
+    background-image: url("/assets/6268643.jpg");
+    padding: 50px 10% 0px;
+    background-size: cover;
+    background-position: center;
+    filter:grayscale(4);
     color: #fff;
-    
 }
-
-
-/* Subtle top shading effect */
 
 .who-we-are-section::before {
     position: absolute;
@@ -704,21 +589,15 @@ a.btn.secondary-btn:hover {
     z-index: 10;
     pointer-events: none;
 }
-
-
-/* Styling the heading */
-
 .who-we-are-section h2 {
     font-size: 36px;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 20px;
+    margin-left: 200px;
     z-index: 2;
     position: relative;
 }
-
-
-/* Styling the paragraph */
 
 .who-we-are-section p {
     font-size: 16px;
@@ -727,9 +606,7 @@ a.btn.secondary-btn:hover {
     position: relative;
 }
 
-
 /* Responsive adjustments for small screens */
-
 @media (max-width: 768px) {
     .who-we-are-section h2 {
         text-align: center;
@@ -741,11 +618,9 @@ a.btn.secondary-btn:hover {
     }
 }
 
+/* section2 */
 
-/* who we are */
-
-/* section 2services */
-
+/* section 3services */
 .custom-container {
     position: relative;
     background-color: #000; 
@@ -767,10 +642,8 @@ a.btn.secondary-btn:hover {
 .custom-container .col {
     padding: 20px;
     text-align: center;
-
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     flex: 0 0 calc(33.333% - 20px); 
-    
 }
 
 .custom-container .col:hover {
@@ -782,8 +655,7 @@ a.btn.secondary-btn:hover {
 /* Responsive adjustments */
 @media (max-width: 992px) {
     .custom-container .col {
-        flex: 0 0 calc(50% - 20px); 
-        
+        flex: 0 0 calc(50% - 20px);    
     }
 }
 
@@ -952,4 +824,4 @@ a.btn.secondary-btn:hover {
     box-shadow: inset 0 -2px 25px -4px var(--white);
   }
   
-/* section 2 services*/
+/* section 3 services*/
