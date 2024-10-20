@@ -1,7 +1,5 @@
 /* General reset */
-body{
-    background-color: #000;
-}
+
 * {
     margin: 0;
     padding: 0;
@@ -576,18 +574,25 @@ a.btn.secondary-btn:hover {
 
 
 /* section2 */
-
-.section2{
-    
-    /* position: relative; */
-    padding: 50px 20px;
-   
-    flex-direction: column;
+/* Need to edit */
+.section2 .container{
+    background-color: #0e0d0d;
+    box-sizing:border-box;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    border: white;
+    border-color: #00d1a9;
+    border-radius: 5px ;
     
 }
-/* 
-backdrop-filter: blur(20px);
-    background-color: #000; */
+.section2{
+    background-color: #000;
+    padding: 50px 20px;
+    position: relative;
+    flex-direction: column;
+}
+
 
 .section-title {
     font-size: 2.5rem;
@@ -596,18 +601,12 @@ backdrop-filter: blur(20px);
     text-transform: uppercase;
     text-align: left; /* Aligns text to the left */
     text-transform: uppercase;
-    background-color: #000;
-    position: relative;
     transform: translateY(20px);
     animation: fadeInUp 2s ease-in-out forwards;
-
-
 
 }
 
 .section-text {
-    
-    position: relative;
     font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 40px;
@@ -648,45 +647,38 @@ backdrop-filter: blur(20px);
 }
 /* section2 */
 /* section 3services */
-
+/* offers */
   .loader {
     color: rgb(124, 124, 124);
-    font-weight: 100;
-    font-size:385%;
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
+    box-sizing: content-box;  
     overflow:hidden;
-    height: 50px;
+    height: 40px;
     padding: 50px 50px; 
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: center;
+    display: flex; 
+    justify-content: flex-start;
     background-color: black;
     position: relative;
     align-items: baseline;
-    flex-direction: row;   
+   flex-direction: row;
   }
 
   .loader h2{
-    font-size: 47px;
-    padding-right: 0.5%;
-    font-weight: 100;
+    font-size: 50px;
+    margin-left: 14.2%;
+    font-weight: 300;
     color: white;
     transform: translateY(20px);
     animation: fadeInUp 2s ease-in-out forwards;
-    text-decoration: underline;
-    text-underline-offset: 20px;
-    text-decoration-thickness: 1px;
-    
   }
   .words {
+    margin-left: 1%;
     overflow: hidden;
     position: relative;
     height: auto;
+    font-size: 50px;
+    font-weight: 500;
     transform: translateY(20px);
     animation: fadeInUp 2s ease-in-out forwards;
-    
   }
   .words::after {
     content: "";
@@ -699,20 +691,15 @@ backdrop-filter: blur(20px);
       var(--bg-color) 90%
     );
     z-index: 10;
-    
   }
   
   .word {
     display: block;
     height: 100%;
-    padding-left: 6px;
-    font-family: saira;
     color: #0DA2E9;
-    animation: spin_4991 8s infinite;
-    
+    animation: spin_4991 4s infinite;
   }
-
-
+  
   @keyframes spin_4991 {
     10% {
       -webkit-transform: translateY(-102%);
@@ -754,7 +741,68 @@ backdrop-filter: blur(20px);
       transform: translateY(-400%);
     }
   } 
-/* section 3 services*/
+  
+
+  @media screen and (max-width: 1200px) {
+    .loader {
+      padding: 40px 30px;
+       
+    }
+  
+    .loader h2 {
+      font-size: 2.4rem; 
+      margin-right: 15px; 
+    }
+  
+    .words {
+      font-size: 2rem; 
+    }
+  }
+
+
+  @media screen and (max-width: 992px) {
+
+    .loader h2 {
+      font-size: 2rem;
+     
+    }
+  
+    .words {
+      font-size: 2rem;
+    }
+  }
+  
+ 
+  @media screen and (max-width: 768px) {
+    .loader h2 {
+      font-size: 1.8rem;
+    }
+  
+    .words {
+      font-size: 1.6rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .loader{
+        padding-top: 2%;
+    }
+    .loader h2 {
+      font-size: 1.5rem; 
+      margin: auto;
+    }
+  
+    .words {
+      font-size: 1.5rem; 
+      height: 200%;
+    }
+  
+    .word {
+      padding: 0;
+    }
+  }
+/* offers */
+
 .services-section {
     background-color: #000;
     color: #fff;
@@ -817,22 +865,9 @@ backdrop-filter: blur(20px);
   
   .arrow-btn:hover {
     transform: rotate(90deg); /* Arrow rotates on hover */
+    background-color: none;
+  
   }
-  
-  /* .collapse {
-    background-color: #111;
-    padding: 20px;
-  }
-   */
-  /* .collapse img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  } */
-  
-  /* hr {
-    border: 0;
-    border-top: 1px solid #333;
-    margin: 20px 0;
-  } */
-  
+   
+
+  /* section 3 services*/
