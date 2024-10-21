@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,157 +9,112 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 <!-- Font Awesome -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-
+<style>
+  /* Apply black theme to the entire webpage */
+body {
+    background-color: #000;
+    color: #ddd; /* Optional: Set a default text color */
+}
+/* For specific sections */
+section {
+    background-color: transparent; /* This will inherit the body background color */
+    color: #ddd; /* You can adjust this color as needed */
+}
+</style>
   </head>
-
 <body>
-
     <header>
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark  fixed-top " id="navbar">
-
-            <img class="header-logo " src="assets/logo.png" alt="logo" />
-            <button class="custom-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                  <div class="bar1"></div>
-                  <div class="bar2"></div>
-                  
+        <nav class="navbar navbar-expand-lg navbar-dark  fixed-top " id="navbar"><img class="header-logo " src="assets/logo.png" alt="logo" />
+            <button class="custom-toggler d-lg-none" id="checkbox" type="checkbox" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                  <!-- <div class="bar1"></div>
+                  <div class="bar2"></div> -->
+                           
+                              <div class="bars" id="bar1"></div>
+                              <div class="bars" id="bar2"></div>
+                              <div class="bars" id="bar3"></div>
+                         
               </button>
-
             <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-
-                <div class="offcanvas-header">
-                    <img class="header-logo" src="assets/logo.png" alt="logo" />
+                <div class="offcanvas-header"><img class="header-logo" src="assets/logo.png" alt="logo" />
                     <button type="button" class="custom-btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div>
                     <div class="offcanvas-body custom-offcanvas-body">
                         <ul class="navbar-nav mx-auto flex-grow-1 pe-5 ps-5">
-
                             <ul class="navbar-nav justify-content-top flex-grow-1">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a
-                  >
-                </li>
-               
-                
-                <li class="nav-item dropdown">
-                  <a
+                                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#" >Home</a>                 
+                </li>               
+                <li class="nav-item dropdown"><a
                     class="nav-link dropdown-toggle"
                     href="#"
-                    role="button"
-                  > 
+                    role="button">
                     Services
                   </a>
                                     <ul class="dropdown-menu dropdown-menu-dark custom-dropdown-menu" id="navbar-dropdown-item">
                                         <li><a class="dropdown-item custom-dropdown-item mb-3 mt-2" href="#">SEO Services</a></li>
-                                        <li>
-                                            <a class="dropdown-item custom-dropdown-item mb-3" href="#">Full Stack Digital Marketing</a>
+                                        <li><a class="dropdown-item custom-dropdown-item mb-3" href="#">Full Stack Digital Marketing</a>
                                         </li>
-
-                                        <li>
-                                            <a class="dropdown-item custom-dropdown-item mb-3" href="#">Link Building</a>
+                                        <li><a class="dropdown-item custom-dropdown-item mb-3" href="#">Link Building</a>
                                         </li>
-                                        <li>
-                                            <a class="dropdown-item custom-dropdown-item mb-3" href="#">Social Media Marketing</a>
+                                        <li><a class="dropdown-item custom-dropdown-item mb-3" href="#">Social Media Marketing</a>
                                         </li>
-                                        <li>
-                                            <a class="dropdown-item custom-dropdown-item mb-3" href="#">Performance Marketing</a>
+                                        <li><a class="dropdown-item custom-dropdown-item mb-3" href="#">Performance Marketing</a>
                                         </li>
-                                        <li>
-                                            <a class="dropdown-item custom-dropdown-item mb-3" href="#">UIUX Design</a>
+                                        <li><a class="dropdown-item custom-dropdown-item mb-3" href="#">UIUX Design</a>
                                         </li>
-                                        <li>
-                                            <a class="dropdown-item custom-dropdown-itemmb-3" href="#">Web Development</a>
+                                        <li><a class="dropdown-item custom-dropdown-itemmb-3" href="#">Web Development</a>
                                         </li>
                                     </ul>
-
-
-
-
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">About</a>
+                                    <li class="nav-item"><a class="nav-link" href="#">About</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Portfolio</a>
+                                    <li class="nav-item"><a class="nav-link" href="#">Portfolio</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Blog</a>
+                                    <li class="nav-item"><a class="nav-link" href="#">Blog</a>
                                     </li>
                             </ul>
-
                             <button class="custom-btn" id="navbar-btn" type="submit">Get in Touch</button>
                     </div>
                 </div>
-
         </nav>
-
         <!-- navbar -->
-
-
     </header>
-    <!-- star -->
     <div class="bg-animation">
-        <!-- <div id="stars"></div> -->
-
-
-        <!-- star -->
         <!-- Hero Section -->
-
-
-        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4500">
-            <div class="color-circle"></div>
-            <div class="carousel-inner">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4500"> 
+            <div class="color-circle"></div>   
+            <div class="carousel-inner">    
                 <div class="carousel-item active">
-
-                    <div class="hero-section">
-
+                    <div class="hero-section">           
                         <div class="hero-content">
                             <h1>Driving growth with <span class="highlight">AI</span>.</h1>
                             <p>We craft workflow automations and bespoke AI solutions for forward-thinking companies.</p>
-
                         </div>
                     </div>
                 </div>
-
                 <div class="carousel-item">
-
                     <div class="hero-section">
-
-
                         <div class="hero-content">
                             <h1>Unlock the power of <span class="highlight">Automation</span>.</h1>
                             <p>Streamline your processes with cutting-edge solutions.</p>
-
                         </div>
                     </div>
                 </div>
-
                 <div class="carousel-item">
-
                     <div class="hero-section">
-
                         <div class="hero-content">
                             <h1>Transform your business with <span class="highlight">Data</span>.</h1>
                             <p>Turn insights into action with powerful analytics.</p>
-
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="cta-buttons">
-                <a href="#" class="btn primary-btn">Our services</a>
-                <a href="#" class="btn secondary-btn">Get in touch</a>
+            <div class="cta-buttons"><a href="#" class="btn primary-btn">Our services</a><a href="#" class="btn secondary-btn">Get in touch</a>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span>
     </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span>
     </button>
-
-
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
                 <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
@@ -169,7 +123,6 @@
         </div>
     </div>
     <!-- Hero Section -->
-
     <!-- Section 2 -->
     <section  class="section2" style="background-color: black; color: #ddd;">
       <div class="container">
@@ -188,38 +141,25 @@
       </div>
     </section>
    <!-- Section 2 -->
-
       <!-- Section 3 -->
-   
       <div class="loader">
         <h2>Edge Dynamiq Offers</h2>
-        <div class="words">
-          <span class="word">SEO</span>
-          <span class="word">PERFORMANCE MARKETING</span>
-          <span class="word">WEB DEVELOPMENT</span>
-          <span class="word">UI/UX DESIGN</span>
-          <span class="word">LINK BUILDING</span>
-          <span class="word">DIGITAL MARKETING</span>
-          <span class="word">RPA</span>
-          <span class="word">SMM</span>
+        <div class="words"><span class="word">SEO</span><span class="word">PERFORMANCE MARKETING</span><span class="word">WEB DEVELOPMENT</span><span class="word">UI/UX DESIGN</span><span class="word">LINK BUILDING</span><span class="word">DIGITAL MARKETING</span><span class="word">RPA</span><span class="word">SMM</span>
         </div>
       </div>
-    
- 
 <!-- section3 services-->
-
 <!-- section3 services-->
 <section class="services-section py-5">
   <div class="container">
     <!-- Service 1 -->
-    <div class="row align-items-center mb-4 service-item">
+    <div class="row align-items-center mb-4 service-item" id="seoservice" data-target="#service1-details">
       <div class="col-md-1 service-number">01</div>
       <div class="col-md-8">
         <h3>SEO (Search Engine Optimization)</h3>
         <p class="short-description">We follow the RIBA Plan of Work 2020 to ensure an orderly framework and project clarity from the outset...</p>
       </div>
       <div class="col-md-3 text-right">
-        <button class="arrow-btn" data-target="#service1-details">
+        <button class="arrow-btn" >
           <i class="fas fa-arrow-right"></i>
         </button>
       </div>
@@ -229,22 +169,20 @@
         <div class="col-md-6">
           <p>Here we conduct feasibility studies and a project review to mitigate risks...</p>
         </div>
-        <div class="col-md-6">
-          <img src="/assets/6268643.jpg" class="img-fluid" alt="Expanded De-risking project image">
+        <div class="col-md-6"><img src="/assets/6268643.jpg" class="img-fluid" alt="Expanded De-risking project image">
         </div>
       </div>
     </div>
     <hr />
-
     <!-- Service 2 -->
-    <div class="row align-items-center mb-4 service-item">
+    <div class="row align-items-center mb-4 service-item" id="seoservice" data-target="#service2-details">
       <div class="col-md-1 service-number">02</div>
       <div class="col-md-8">
         <h3>PERFORMANCE MARKETING</h3>
         <p class="short-description">This process is led either by a chartered planning consultant or architect...</p>
       </div>
       <div class="col-md-3 text-right">
-        <button class="arrow-btn" data-target="#service2-details">
+        <button class="arrow-btn" >
           <i class="fas fa-arrow-right"></i>
         </button>
       </div>
@@ -254,22 +192,20 @@
         <div class="col-md-6">
           <p>During this phase, we develop concept designs and planning strategies...</p>
         </div>
-        <div class="col-md-6">
-          <img src="/assets/6268643.jpg" class="img-fluid" alt="Expanded Planning strategies image">
+        <div class="col-md-6"><img src="/assets/6268643.jpg" class="img-fluid" alt="Expanded Planning strategies image">
         </div>
       </div>
     </div>
     <hr />
-
     <!-- Service 3 -->
-    <div class="row align-items-center mb-4 service-item">
+    <div class="row align-items-center mb-4 service-item" id="seoservice" data-target="#service3-details">
       <div class="col-md-1 service-number">03</div>
       <div class="col-md-8">
         <h3>LINK BUILDING</h3>
         <p class="short-description">During this phase the design is developed to meet the required standards...</p>
       </div>
       <div class="col-md-3 text-right">
-        <button class="arrow-btn" data-target="#service3-details">
+        <button class="arrow-btn" >
           <i class="fas fa-arrow-right"></i>
         </button>
       </div>
@@ -279,22 +215,20 @@
         <div class="col-md-6">
           <p>We ensure that the project meets all investment goals and delivers on ROI...</p>
         </div>
-        <div class="col-md-6">
-          <img src="/assets/6268643.jpg" class="img-fluid" alt="Expanded Return on investment image">
+        <div class="col-md-6"><img src="/assets/6268643.jpg" class="img-fluid" alt="Expanded Return on investment image">
         </div>
       </div>
     </div>
     <hr />
-
      <!-- Service 4 -->
-     <div class="row align-items-center mb-4 service-item">
+     <div class="row align-items-center mb-4 service-item" id="seoservice" data-target="#service4-details">
       <div class="col-md-1 service-number">04</div>
       <div class="col-md-8">
         <h3>DIGITAL MARKETING</h3>
         <p class="short-description">During this phase the design is developed to meet the required standards...</p>
       </div>
       <div class="col-md-3 text-right">
-        <button class="arrow-btn" data-target="#service4-details">
+        <button class="arrow-btn">
           <i class="fas fa-arrow-right"></i>
         </button>
       </div>
@@ -304,22 +238,20 @@
         <div class="col-md-6">
           <p>We ensure that the project meets all investment goals and delivers on ROI...</p>
         </div>
-        <div class="col-md-6">
-          <img src="/assets/6268643.jpg" class="img-fluid" alt="Expanded Return on investment image">
+        <div class="col-md-6"><img src="/assets/6268643.jpg" class="img-fluid" alt="Expanded Return on investment image">
         </div>
       </div>
     </div>
     <hr />
-
      <!-- Service 5 -->
-     <div class="row align-items-center mb-4 service-item">
+     <div class="row align-items-center mb-4 service-item" id="seoservice" data-target="#service5-details">
       <div class="col-md-1 service-number">05</div>
       <div class="col-md-8">
         <h3>UI/UX DESIGN</h3>
         <p class="short-description">During this phase the design is developed to meet the required standards...</p>
       </div>
       <div class="col-md-3 text-right">
-        <button class="arrow-btn" data-target="#service5-details">
+        <button class="arrow-btn">
           <i class="fas fa-arrow-right"></i>
         </button>
       </div>
@@ -329,22 +261,20 @@
         <div class="col-md-6">
           <p>We ensure that the project meets all investment goals and delivers on ROI...</p>
         </div>
-        <div class="col-md-6">
-          <img src="/assets/6268643.jpg" class="img-fluid" alt="Expanded Return on investment image">
+        <div class="col-md-6"><img src="/assets/6268643.jpg" class="img-fluid" alt="Expanded Return on investment image">
         </div>
       </div>
     </div>
     <hr />
-
      <!-- Service 6 -->
-     <div class="row align-items-center mb-4 service-item">
+     <div class="row align-items-center mb-4 service-item" id="seoservice" data-target="#service6-details">
       <div class="col-md-1 service-number">06</div>
       <div class="col-md-8">
         <h3>WEB DEVELOPMENT</h3>
         <p class="short-description">During this phase the design is developed to meet the required standards...</p>
       </div>
       <div class="col-md-3 text-right">
-        <button class="arrow-btn" data-target="#service6-details">
+        <button class="arrow-btn">
           <i class="fas fa-arrow-right"></i>
         </button>
       </div>
@@ -354,21 +284,20 @@
         <div class="col-md-6">
           <p>We ensure that the project meets all investment goals and delivers on ROI...</p>
         </div>
-        <div class="col-md-6">
-          <img src="/assets/6268643.jpg" class="img-fluid" alt="Expanded Return on investment image">
+        <div class="col-md-6"><img src="/assets/6268643.jpg" class="img-fluid" alt="Expanded Return on investment image">
         </div>
       </div>
     </div>
     <hr />
  <!-- Service 7 -->
- <div class="row align-items-center mb-4 service-item">
+ <div class="row align-items-center mb-4 service-item" id="seoservice" data-target="#service7-details">
   <div class="col-md-1 service-number">07</div>
   <div class="col-md-8">
     <h3>RPA (Robotic Process Automation)</h3>
     <p class="short-description">During this phase the design is developed to meet the required standards...</p>
   </div>
   <div class="col-md-3 text-right">
-    <button class="arrow-btn" data-target="#service7-details">
+    <button class="arrow-btn">
       <i class="fas fa-arrow-right"></i>
     </button>
   </div>
@@ -378,25 +307,91 @@
     <div class="col-md-6">
       <p>We ensure that the project meets all investment goals and delivers on ROI...</p>
     </div>
-    <div class="col-md-6">
-      <img src="/assets/6268643.jpg" class="img-fluid" alt="Expanded Return on investment image">
+    <div class="col-md-6"><img src="/assets/6268643.jpg" class="img-fluid" alt="Expanded Return on investment image">
     </div>
   </div>
 </div>
-<hr />
+  </div>
+</section>
+<!-- section3 services-->
+<!-- section 4-->
 
+<section class="portfolio-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Image Section -->
+      <div class="col-md-4">
+        <img src="/assets/6268643.jpg" alt="Your Image" class="img-fluid profile-img">
+      </div>
+      
+      <!-- Portfolio Details Section -->
+      <div class="col-md-8">
+        <h2>Meet [Your Name]</h2>
+        <p>I'm a [your profession: e.g. SEO & Digital Marketing Expert] with [X years] of experience in delivering top-notch digital solutions. My expertise lies in creating SEO strategies, developing marketing campaigns, and optimizing websites to drive meaningful results.</p>
+        
+        <!-- Highlight Work -->
+        <div class="portfolio-details">
+          <h4>Recent Projects</h4>
+          <ul>
+            <li><strong>Project 1:</strong> SEO & Link Building for [Company Name], increased organic traffic by X%.</li>
+            <li><strong>Project 2:</strong> Digital marketing campaign for [Client Name], generated X leads in Y time.</li>
+            <li><strong>Project 3:</strong> Website optimization for [Client Name], improved site performance by X%.</li>
+          </ul>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="mt-4">
+          <a href="#contact" class="btn primary-btn">Contact Me</a>
+          <a href="portfolio.pdf" target="_blank" class="btn secondary-btn">Download My Portfolio</a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- section3 services-->
-<!-- section 3 services-->
 
+
+<!-- section 4-->
+
+<!-- section 5 -->
+<section class="ezy__numbers7">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-12 col-md-9">
+        <h1 class="ezy__numbers7-heading mb-4">Lorem ipsum, dolor sit amet consectetur</h1>
+        <p class="ezy__numbers7-sub-heading">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod perferendis nihil cupiditate aliquid
+          qui exercitationem labore veritatis eaque nobis libero earum.
+        </p>
+      </div>
+    </div>
+    <div class="row text-center mt-5">
+      <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
+        <h3 class="mb-3">141</h3>
+        <h5>Completed Event</h5>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
+        <h3 class="mb-3">17k</h3>
+        <h5>Game Completed</h5>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
+        <h3 class="mb-3">641</h3>
+        <h5>Completed Fund</h5>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
+        <h3 class="mb-3">54</h3>
+        <h5>Completed Ticket</h5>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- section 5 -->
+<!-- ____________________________ -->
 <script src="js/main.js?v=1.0"></script>
-
 <!-- Bootstrap JS and jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-
 </html>
