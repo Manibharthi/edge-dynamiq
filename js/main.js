@@ -3,29 +3,6 @@ document.querySelector('.custom-toggler').addEventListener('click', function() {
 });
 
 
-// document.addEventListener('DOMContentLoaded', function () {
-//   const buttons = document.querySelectorAll('.arrow-btn');
-//   buttons.forEach(button => {
-//     button.addEventListener('click', function () {
-//       const targetId = button.getAttribute('data-target');
-//       const targetSection = document.querySelector(targetId);
-
-     
-//       document.querySelectorAll('.service-details').forEach(section => {
-//         if (section !== targetSection) {
-//           section.style.display = 'none';
-//         }
-//       });
-
-//       if (targetSection.style.display === 'none') {
-//         targetSection.style.display = 'block';
-//       } else {
-//         targetSection.style.display = 'none';
-//       }
-//     });
-//   });
-// });
-
 document.addEventListener('DOMContentLoaded', function () {
   const serviceItems = document.querySelectorAll('.service-item');
   
